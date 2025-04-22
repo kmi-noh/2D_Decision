@@ -54,7 +54,7 @@ def vec_on(arr, dim, n_dim=None):
     return np.reshape(arr, sh)
 
 
-def cell2mat(c: np.ndarray, dtype=np.float) -> np.ndarray:
+def cell2mat(c: np.ndarray, dtype=np.cfloat) -> np.ndarray:
     # convert from object to numeric
     shape0 = c.shape
     vs = np.stack([v.astype(dtype) for v in c.flatten()])

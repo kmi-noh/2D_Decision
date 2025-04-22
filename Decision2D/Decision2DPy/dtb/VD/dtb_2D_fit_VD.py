@@ -53,11 +53,11 @@ bufdur_best = 0.08
 
 FixType = Iterable[Union[str, Tuple[str, Any]]]
 
-max_epoch0 = 500
+max_epoch0 = 30
 
 
 def main():
-    i_subjs = [0, 1]
+    i_subjs = [0]
 
     # === Fit
     for buffix in bufdurs0:
